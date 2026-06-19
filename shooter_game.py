@@ -256,7 +256,7 @@ while game:
         if missed >= missed_threshold or elapsed_time > max_time:
             window.fill((255, 0, 0))
             
-            defeat_message = font_two.render(f'HAS PERDIDO', True, (255, 255, 255))
+            defeat_message = font_two.render(f'HAS PERDIDO :(', True, (255, 255, 255))
             defeat_message_rect = defeat_message.get_rect()
 
             defeat_score_text = font_one.render(f'Puntaje: {score}/{winning_score} ({round(score*100/winning_score,0)}%)', True, (255, 255, 255))
